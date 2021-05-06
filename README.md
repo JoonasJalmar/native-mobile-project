@@ -4,7 +4,7 @@
 Joonas Kirsi
 
 ## Topic
-Application that gets quizzes from https://quizapi.io/. User can choose a technical topic to be quizzed on.
+Application that gets quizzes from https://opentdb.com/. User can choose a topic to be quizzed on.
 - Choose one topic or several together
 - Choose how many questions you want
 - Choose a time limit per question
