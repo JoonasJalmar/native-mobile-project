@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/twNumberOfQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="How many questions" />
+
+    <EditText
+        android:id="@+id/etNumberOfQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="1-50" />
+
+    <TextView
+        android:id="@+id/twMultipleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:text="Multiple choice questions" />
+
+
+    <ToggleButton
+        android:id="@+id/tbMultipleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/twSelectGategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Select Gategory" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fadeScrollbars="false"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#666666">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgGategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbGeneral"
+                    style="@android:style/Widget.CompoundButton.RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="General" />
+
+                <RadioButton
+                    android:id="@+id/rbScience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Science" />
+
+                <RadioButton
+                    android:id="@+id/rbHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History" />
+
+                <RadioButton
+                    android:id="@+id/rbSports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sports" />
+
+                <RadioButton
+                    android:id="@+id/rbAnimals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Animals" />
+
+                <RadioButton
+                    android:id="@+id/rbPolitics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Politics" />
+
+                <RadioButton
+                    android:id="@+id/rbArt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Art" />
+
+                <RadioButton
+                    android:id="@+id/rbMythology"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Myhtology" />
+
+                <RadioButton
+                    android:id="@+id/rbCelebrities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Celebrities" />
+
+                <RadioButton
+                    android:id="@+id/rbBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Books" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/twDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Difficulty level"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbDifficultyEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:text="Easy" />
+
+            <RadioButton
+                android:id="@+id/rbDifficultyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/rbDifficultyHard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Hard" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="5dp" />
+
+
+</LinearLayout>
