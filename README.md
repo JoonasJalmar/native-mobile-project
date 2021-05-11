@@ -15,3 +15,8 @@ Android/Kotlin
 
 ## Google Play link
 http://… (will be updated when ready)
+
+## Release 1: 2021-05-12 features
+ - User is able to see UI
+ - User is able to press quiz setting buttons and switches
+ - User is able to see random questions from the API
