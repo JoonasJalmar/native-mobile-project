@@ -27,7 +27,9 @@ http://… (will be updated when ready)
  - User is able to choose difficulty level of questions
  - User is able to play the game
  - User is able to see how many questions they got right with an Android toast
+
   UI-esittely: https://youtu.be/roEFS6EEPxY
+  
   Koodi-esittely: https://youtu.be/WmCScVHI-PM
 
  # Known Bugs
